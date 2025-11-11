@@ -1,0 +1,36 @@
+id = "goose"
+name = "goose"
+description = "your friendly local AI agent, automating all tasks seamlessly"
+version = "1.13.2"
+schema_version = 1
+authors = ["Goose"]
+repository = "https://github.com/block/goose"
+
+[agent_servers.goose]
+name = "goose"
+icon = "./goose.svg"
+
+[agent_servers.goose.targets.darwin-aarch64]
+archive = "https://github.com/block/goose/releases/download/v1.13.2/goose-aarch64-apple-darwin.tar.bz2"
+cmd = "./goose"
+args = ["acp"]
+
+[agent_servers.goose.targets.darwin-x86_64]
+archive = "https://github.com/block/goose/releases/download/v1.13.2/goose-x86_64-apple-darwin.tar.bz2"
+cmd = "./goose"
+args = ["acp"]
+
+[agent_servers.goose.targets.linux-aarch64]
+archive = "https://github.com/block/goose/releases/download/v1.13.2/goose-aarch64-unknown-linux-gnu.tar.bz2"
+cmd = "./goose"
+args = ["acp"]
+
+[agent_servers.goose.targets.linux-x86_64]
+archive = "https://github.com/block/goose/releases/download/v1.13.2/goose-x86_64-unknown-linux-gnu.tar.bz2"
+cmd = "./goose"
+args = ["acp"]
+
+[agent_servers.goose.targets.windows-x86_64]
+archive = "https://github.com/block/goose/releases/download/v1.13.2/goose-x86_64-pc-windows-gnu.zip"
+cmd = "./goose.exe"
+args = ["acp"]
