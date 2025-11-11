@@ -3,7 +3,7 @@ name = "goose"
 description = "your friendly local AI agent, automating all tasks seamlessly"
 version = "1.13.2"
 schema_version = 1
-authors = ["Goose"]
+authors = ["goose"]
 repository = "https://github.com/block/goose"
 
 [agent_servers.goose]
